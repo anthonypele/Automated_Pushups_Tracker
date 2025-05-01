@@ -1,0 +1,2 @@
+s ave_folder = r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data"
+

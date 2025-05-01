@@ -1,0 +1,29 @@
+2025-04-25 17:37
+To know exactly how many messages I am going to select. Now it's an expert guess, I want it to be presice
+Well, I tried it and it happened to be doable and yet hard.
+
+ChatGPT offered the idea to check how many real messages are selected till I get to the target one. The problem occured that to get the messages and check for “realism” I need to copy it and match with the pattern. But after copying them with ctrl+c I exit selection mode.
+
+The other chatGPT ideas were to use OCR. That’s deep, yet could be fun actually.
+
+My other idea is to select all the messages and then check how many did I select, and then add the amount that wasn’t enough for the target. Plus some amount or multiply on factor. And this factor could be constant or could depend on how many people were in each day so for every n amount of people add 1 extra for the date.
+
+The question is: why to do it? Well, only for fun and to get new experience in OCR and looping for the target goal. The other thing is that I don’t have to loop it, I can just get it closer with only 2 iterations.
+
+2025-02-05 12:52
+After about 2 month of doing nothing I came back to learn how to install freaking libraries pyautogui and pyperclip
+I did it finally! With the help of chatgpt. I did it in VS Code. In the program line. with this code:
+	C:/Users/Anthony/AppData/Local/Programs/Python/Python312/python.exe -m pip install pyautogui
+I am learning to accept that coding is not coding that much as to organize the environment around it. Active phase of acceptance.
+
+2025-02-06 13:54
+Spent 2 hours trying to do smth. Well, my script can open a notepad, write whatever, save it and close it.
+I decided not to do windows task scheduler and save the same file name bug.
+The WhatsApp is a tough one. I use selenium library to get there, but it's getting long and hard. Even downloading chrome.driver was a pain in the ass. On my way to open web version of WhatsApp and then find the correct chat and starting saving files from there. Hmm, there should be maybe another way as the way I send the messages from the chat back to my e-mail? Hmm, then I will have to accept an e-mail and use a test one I guess. That's coding days. Not bad, but I need to learn to accept all of this shit, it seems to be a normal day of a coder..
+
+2025-02-07 22:16
+I started using desktop WhatsApp to get the data. It works. With using keyboard automatically. And I have learnt to find the name of the last week, this is actually great! I guest I can then call it the particular days too like 01-07 feb 2025 smth like this. Works! It's quite exciting, 1 hour passed fast. Finally I am programming!!
+
+2025-02-10 12:49
+I went the way with opening whatsapp desktop and learning to navigate it with the butoons. It worked pretty well with starting whatsapp app and finding the chat and then I can't select the messages well enouth.
+Grisha told me that mouse clicking is usually the last way and it's better to go with API. I looked back at selenium and it seems I need to try it again. The other road is to export data manually and then work with it. Maybe I should do it first to get the first week result at some, at any way possible and then go back to automatizing the 'get data' part, because it's the 2nd brick wall.

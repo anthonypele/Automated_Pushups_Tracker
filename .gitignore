@@ -1,0 +1,10 @@
+# Ignore backup and messages
+# Here I will choose what to ignore, but I don't want to at the moment
+/data/backup
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore pptx files
+*.pttx
