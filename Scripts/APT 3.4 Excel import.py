@@ -80,4 +80,4 @@ df.to_excel(file_path, index=False)
 
 print("✅ Data successfully exported to pushups_data.xlsx")
 
-os.startfile(file_path) #how to create excel file in a specific folder like txt? The same? I am not sure with this df thing
+os.startfile(file_path) 
