@@ -1,9 +1,9 @@
 # Here I will choose folders, that I what to ignore
-/presentations/
-/data/Backup/
-/data/Messages/
-/data/Txt_data/
-/data/Xlsx_data/
+/Presentations/
+/Data/Backup/
+/Data/Messages/
+/Data/Txt_data/
+/Data/Xlsx_data/
 /Scripts/Experiments/
 
 # Ignore OS/system files
