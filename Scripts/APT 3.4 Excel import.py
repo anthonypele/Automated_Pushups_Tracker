@@ -177,7 +177,7 @@ timestamp = now.strftime('%Y-%m-%d_%H-%M-%S') # Format: 2025-04-10_15-42-07
 filename = f"pushups_data_{timestamp}.xlsx"
 
 # Define save folder
-save_folder = r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data"
+save_folder = r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data\Xlsx_data"
 
 # Full path to save the file
 file_path = os.path.join(save_folder, filename)

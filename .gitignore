@@ -1,10 +1,20 @@
-# Ignore backup and messages
-# Here I will choose what to ignore, but I don't want to at the moment
-/data/backup
+# Here I will choose folders, that I what to ignore
+/presentations/
+/data/Backup/
+/data/Messages/
+/data/Txt_data/
+/data/Xlsx_data/
+/Scripts/Experiments/
 
 # Ignore OS/system files
 .DS_Store
 Thumbs.db
 
-# Ignore pptx files
-*.pttx
+# 🧹 Optional: Python cache files (recommended if using Python)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 📦 Optional: Virtual environments (if you use one)
+venv/
+.env/

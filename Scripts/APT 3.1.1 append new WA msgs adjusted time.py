@@ -13,6 +13,8 @@ import shutil
 # --- Getting the messages from WA ---
 # ====================================
 
+# Поменять на русскую раскладку
+
 # Open Whatsapp desctop
 pag.hotkey("win", "s") # Open windows search
 time.sleep(2)
@@ -58,9 +60,9 @@ pag.hotkey('enter')
 
 # Select the last message
 pag.hotkey('end')
-for i in range(20): # Skipping 10 messages at a time
+for i in range(0): # Skipping 10 messages at a time
     pag.hotkey('pgup')
-for i in range(70): # How many messages approximately to select
+for i in range(5): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 
@@ -91,7 +93,8 @@ timezones = {
     "Павел Антонюк РТ": pytz.timezone('Europe/Moscow'),
     "Андрей Палыч Павлов": pytz.timezone('America/Mexico_City'),
     "Роман Аландаров": pytz.timezone('Europe/Moscow'),
-    "Андрей Русанов": pytz.timezone('Europe/Moscow')
+    "Андрей Русанов": pytz.timezone('Europe/Moscow'),
+    "Анна Русанова РТ": pytz.timezone('Europe/Moscow')
 }
 
 # Convert to target city timezone
@@ -140,7 +143,7 @@ for line in new_lines:
 # Name of the file to append new messages
 filename = f"pushups_data.txt"
 
-# Define save folder
+# Define save folder. If I use a timestamp - then add Data\Txt_data
 save_folder = r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data"
 
 # Full path to save the file
