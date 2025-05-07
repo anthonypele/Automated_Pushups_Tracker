@@ -7,16 +7,7 @@ import os
 import pyperclip
 
 # Open a file dialog to choose a file
-def choose_file():
-    # Create a hidden root window (we don't need it to show up)
-    root = tk.Tk()
-    root.withdraw() # Hides the Tkinter root window
-
-    # Open the file dialog and return the selected file path
-    file_path = filedialog.askopenfilename(title='Select the WA data file', filetypes=[('Textfiles', '*.txt')], initialdir=r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data")
-
-    # Return the selected file path
-    return file_path
+from utilities.choose_file import choose_file
 
 with open(choose_file(), 'r', encoding="utf-8") as file:
     lines = file.readlines() #creating a list made of each line from the txt imported WA file
