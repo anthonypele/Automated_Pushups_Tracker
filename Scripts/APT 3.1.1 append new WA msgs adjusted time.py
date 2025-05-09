@@ -5,12 +5,14 @@ import datetime
 import pygetwindow as gw
 import os
 import re
-import pytz
-import tzlocal
 import shutil
 
+# Import my utilities
+from utilities.timezones import timezones
+from utilities.timezones import get_my_timezone
+
 # ====================================
-# --- Getting the messages from WA ---
+# %%--- Getting the messages from WA ---
 # ====================================
 
 # Поменять на русскую раскладку
@@ -62,7 +64,7 @@ pag.hotkey('enter')
 pag.hotkey('end')
 for i in range(0): # Skipping 10 messages at a time
     pag.hotkey('pgup')
-for i in range(5): # How many messages approximately to select
+for i in range(30): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 
@@ -74,28 +76,13 @@ messages = pyperclip.paste()
 new_lines = messages.strip().splitlines() # This is so that lines matter and not every letter.
 
 # =======================================================
-# --- Convert pusher's time from my timezone to their ---
+# %%--- Convert pusher's time from my timezone to their ---
 # =======================================================
-
-# Get your current time zone automatically 
-my_timezone = tzlocal.get_localzone()
-print("your local time:", datetime.datetime.now(my_timezone))
-print("your local time zone", my_timezone)
 
 # Teaching the script how to divide lines into date, time, name and number of pushups
 pattern = r"\[(\d{2}\.\d{2}\.\d{4}) (\d{1,2}:\d{2})\] (.*?): (\d+)"
 
-# Map names and timezones
-timezones = {
-    "Michael Ice&Fire Perm": pytz.timezone('Europe/Madrid'),
-    "Anthony": my_timezone,
-    "Гриша Соловьев": pytz.timezone('Europe/Moscow'),
-    "Павел Антонюк РТ": pytz.timezone('Europe/Moscow'),
-    "Андрей Палыч Павлов": pytz.timezone('America/Mexico_City'),
-    "Роман Аландаров": pytz.timezone('Europe/Moscow'),
-    "Андрей Русанов": pytz.timezone('Europe/Moscow'),
-    "Анна Русанова РТ": pytz.timezone('Europe/Moscow')
-}
+my_timezone = get_my_timezone()
 
 # Convert to target city timezone
 def convert_time(date_str, time_str, pusher_name): 

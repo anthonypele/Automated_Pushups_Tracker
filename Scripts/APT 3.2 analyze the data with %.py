@@ -6,9 +6,11 @@ from collections import defaultdict
 import os
 import pyperclip
 
-# Open a file dialog to choose a file
+# Imports from my Utilities
+from utilities.aliases import aliases
 from utilities.choose_file import choose_file
 
+# Open a file dialog to choose a file
 with open(choose_file(), 'r', encoding="utf-8") as file:
     lines = file.readlines() #creating a list made of each line from the txt imported WA file
 
@@ -51,24 +53,12 @@ for line in lines:
 # Prepare all names across both weeks
 all_names = set(totals_last_week) | set(totals_week_before_last)
 
-# How do I want names to be displayed in the final report
-aliases = {
-    "Michael Ice&Fire Perm": "Миша",
-    "Anthony": "Антон",
-    "Гриша Соловьев": "Гриша",
-    "Павел Антонюк РТ": "Паша",
-    "Андрей Палыч Павлов": "Палыч",
-    "Роман Аландаров": "Рома",
-    "Андрей Русанов": "Андрей"
-}
-
 # creating print_and_save function, so that I can collect all the printed text in the terminal and save it for pasting
 output_text = ""
 def print_and_save(text):
     global output_text
     print(text)
     output_text += text + "\n"
-
 
 # Calculating the difference 
 diff_pushups = {}

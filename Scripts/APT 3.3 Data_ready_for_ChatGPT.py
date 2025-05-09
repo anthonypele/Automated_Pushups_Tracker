@@ -10,6 +10,9 @@ import pyautogui as pag
 import os
 import pygetwindow as gw
 
+# Imports from my Utilities
+from utilities.aliases import aliases
+
 # Open a file dialog to choose a file
 from utilities.choose_file import choose_file
 
@@ -29,17 +32,6 @@ pattern = re.compile(r"\[(\d{2}\.\d{2}\.\d{4}) \d{1,2}:\d{2}] ([^:]+): (\d+)")
 
 # Prepare all names across both weeks
 #all_names = set(totals_last_week) | set(totals_week_before_last)
-
-# How do I want names to be displayed in the final report
-aliases = {
-    "Michael Ice&Fire Perm": "Миша",
-    "Anthony": "Антон",
-    "Гриша Соловьев": "Гриша",
-    "Павел Антонюк РТ": "Паша",
-    "Андрей Палыч Павлов": "Палыч",
-    "Роман Аландаров": "Рома",
-    "Андрей Русанов": "Андрей"
-}
 
 # =======================================
 # Getting ready the list to feed ChatGPT
