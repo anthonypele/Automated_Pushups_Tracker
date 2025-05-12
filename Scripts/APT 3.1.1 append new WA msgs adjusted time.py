@@ -1,3 +1,4 @@
+# %% Import libraries 
 import pyautogui as pag
 import time
 import pyperclip
@@ -6,6 +7,8 @@ import pygetwindow as gw
 import os
 import re
 import shutil
+import ctypes
+import keyboard
 
 # Import my utilities
 from utilities.timezones import timezones
@@ -15,16 +18,48 @@ from utilities.timezones import get_my_timezone
 # %%--- Getting the messages from WA ---
 # ====================================
 
-# Поменять на русскую раскладку
+#%% Поменять на русскую раскладку
+# Learn which keyboard layout do I have at the moment
+def get_keyboard_layout():
+    user32 = ctypes.WinDLL('user32', use_last_error=True)
+    hwnd = user32.GetForegroundWindow() # Actually gets my current window keyboard layout, otherwise it always shows Eng
+    thread_id = user32.GetWindowThreadProcessId(hwnd, None)
+    hkl = user32.GetKeyboardLayout(thread_id)
+    language_id = hkl & 0xFFFF
+    return hex(language_id)
 
-# Open Whatsapp desctop
-pag.hotkey("win", "s") # Open windows search
+# Languages codes for the future if needed
+language_codes = {
+    '0x409': 'English (US)',
+    '0x419': 'Russian',
+    '0x80a': 'Spanish (Mexico)',
+    '0x40a': 'Spanish (Spain)',
+}
+
+keyboard_layout = get_keyboard_layout()
+print(keyboard_layout)
+
+if keyboard_layout not in ('0x409', '0x80a'):
+    print('It is not English or Spanish, changing it')
+    pag.keyDown('alt')
+    pag.press('shift')
+    pag.keyUp('alt')
+    #pag.press('esc')
+    time.sleep(0.5)
+    keyboard_layout = get_keyboard_layout()
+    print(f'Now it is {keyboard_layout}')
+
+#%% Open Whatsapp desctop
+
+keyboard.send('windows+s') # Opens window search reliable with 'win' key after keyboard layout change
+keyboard.release('windows')
 time.sleep(2)
 pyperclip.copy("Whatsapp")
 pag.hotkey("ctrl", "v")
 time.sleep(0.1)
 pag.press("enter")
 time.sleep(3)
+pag.press('esc')
 
 # Naming WA app
 windows = gw.getWindowsWithTitle("Whatsapp")
@@ -62,9 +97,9 @@ pag.hotkey('enter')
 
 # Select the last message
 pag.hotkey('end')
-for i in range(0): # Skipping 10 messages at a time
+for i in range(0): # Skipping 10 messages at a time (to get the last data should be 45)
     pag.hotkey('pgup')
-for i in range(30): # How many messages approximately to select
+for i in range(1): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 

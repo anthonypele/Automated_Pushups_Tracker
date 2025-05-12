@@ -1,3 +1,146 @@
+[13.11.2024 10:39] Роман Аландаров: 10
+[15.11.2024 08:29] Michael Ice&Fire Perm: 100
+[16.11.2024 08:37] Michael Ice&Fire Perm: 100
+[16.11.2024 09:09] Anthony: 25
+[17.11.2024 09:30] Павел Антонюк РТ: 15
+[18.11.2024 08:41] Michael Ice&Fire Perm: 100
+[19.11.2024 08:45] Michael Ice&Fire Perm: 100
+[19.11.2024 09:11] Anthony: 110
+[20.11.2024 08:51] Michael Ice&Fire Perm: 100
+[20.11.2024 09:09] Anthony: 5
+[21.11.2024 09:05] Michael Ice&Fire Perm: 100
+[21.11.2024 09:20] Anthony: 76
+[22.11.2024 08:54] Michael Ice&Fire Perm: 100
+[23.11.2024 09:12] Michael Ice&Fire Perm: 100
+[23.11.2024 10:41] Anthony: 35
+[25.11.2024 11:15] Anthony: 5
+[29.11.2024 08:40] Michael Ice&Fire Perm: 100
+[30.11.2024 09:10] Michael Ice&Fire Perm: 100
+[01.12.2024 08:40] Michael Ice&Fire Perm: 100
+[01.12.2024 14:50] Anthony: 15
+[02.12.2024 08:42] Michael Ice&Fire Perm: 100
+[03.12.2024 08:55] Michael Ice&Fire Perm: 100
+[04.12.2024 08:42] Michael Ice&Fire Perm: 100
+[05.12.2024 08:24] Michael Ice&Fire Perm: 100
+[05.12.2024 10:41] Anthony: 20
+[06.12.2024 08:45] Michael Ice&Fire Perm: 100
+[06.12.2024 10:44] Anthony: 77
+[07.12.2024 09:07] Michael Ice&Fire Perm: 100
+[07.12.2024 10:28] Павел Антонюк РТ: 20
+[07.12.2024 11:51] Anthony: 20
+[08.12.2024 08:30] Michael Ice&Fire Perm: 100
+[08.12.2024 14:33] Anthony: 15
+[09.12.2024 08:36] Michael Ice&Fire Perm: 100
+[09.12.2024 13:57] Anthony: 18
+[10.12.2024 08:37] Michael Ice&Fire Perm: 100
+[10.12.2024 10:59] Anthony: 20
+[11.12.2024 08:41] Michael Ice&Fire Perm: 100
+[12.12.2024 08:50] Michael Ice&Fire Perm: 100
+[12.12.2024 10:43] Anthony: 20
+[13.12.2024 08:38] Michael Ice&Fire Perm: 100
+[14.12.2024 09:23] Michael Ice&Fire Perm: 100
+[15.12.2024 08:49] Michael Ice&Fire Perm: 100
+[15.12.2024 13:24] Anthony: 20
+[18.12.2024 08:56] Michael Ice&Fire Perm: 100
+[18.12.2024 10:10] Anthony: 25
+[19.12.2024 08:51] Michael Ice&Fire Perm: 100
+[19.12.2024 10:26] Anthony: 25
+[20.12.2024 08:51] Michael Ice&Fire Perm: 100
+[20.12.2024 09:03] Anthony: 10
+[21.12.2024 09:15] Michael Ice&Fire Perm: 100
+[21.12.2024 09:29] Anthony: 40
+[22.12.2024 08:55] Michael Ice&Fire Perm: 100
+[23.12.2024 08:59] Anthony: 30
+[23.12.2024 09:16] Michael Ice&Fire Perm: 100
+[24.12.2024 08:42] Michael Ice&Fire Perm: 100
+[24.12.2024 08:47] Anthony: 20
+[25.12.2024 08:50] Michael Ice&Fire Perm: 100
+[25.12.2024 09:02] Anthony: 20
+[26.12.2024 08:51] Michael Ice&Fire Perm: 100
+[27.12.2024 08:52] Michael Ice&Fire Perm: 100
+[27.12.2024 10:29] Anthony: 25
+[28.12.2024 09:30] Michael Ice&Fire Perm: 100
+[29.12.2024 09:08] Michael Ice&Fire Perm: 100
+[29.12.2024 09:40] Anthony: 5
+[30.12.2024 08:52] Michael Ice&Fire Perm: 100
+[01.01.2025 09:02] Michael Ice&Fire Perm: 100
+[01.01.2025 10:45] Anthony: 20
+[02.01.2025 08:56] Michael Ice&Fire Perm: 100
+[02.01.2025 10:09] Anthony: 10
+[03.01.2025 08:38] Michael Ice&Fire Perm: 100
+[04.01.2025 09:33] Michael Ice&Fire Perm: 100
+[05.01.2025 09:03] Michael Ice&Fire Perm: 100
+[06.01.2025 09:04] Michael Ice&Fire Perm: 100
+[07.01.2025 09:04] Michael Ice&Fire Perm: 100
+[07.01.2025 10:04] Anthony: 30
+[08.01.2025 09:11] Michael Ice&Fire Perm: 100
+[09.01.2025 09:03] Michael Ice&Fire Perm: 100
+[09.01.2025 10:43] Anthony: 30
+[10.01.2025 09:00] Michael Ice&Fire Perm: 100
+[10.01.2025 10:20] Anthony: 30
+[14.01.2025 09:02] Michael Ice&Fire Perm: 100
+[14.01.2025 12:52] Anthony: 12
+[15.01.2025 08:37] Anthony: 15
+[15.01.2025 09:01] Michael Ice&Fire Perm: 100
+[16.01.2025 11:40] Anthony: 20
+[18.01.2025 08:53] Michael Ice&Fire Perm: 100
+[19.01.2025 09:03] Michael Ice&Fire Perm: 100
+[20.01.2025 09:02] Michael Ice&Fire Perm: 100
+[20.01.2025 11:45] Anthony: 15
+[21.01.2025 09:03] Michael Ice&Fire Perm: 100
+[21.01.2025 13:11] Anthony: 30
+[22.01.2025 09:01] Michael Ice&Fire Perm: 100
+[22.01.2025 09:02] Michael Ice&Fire Perm: 100
+[22.01.2025 10:24] Anthony: 40
+[23.01.2025 09:07] Michael Ice&Fire Perm: 100
+[23.01.2025 10:08] Anthony: 66
+[24.01.2025 09:03] Michael Ice&Fire Perm: 100
+[24.01.2025 17:37] Anthony: 10
+[25.01.2025 08:58] Michael Ice&Fire Perm: 100
+[26.01.2025 09:24] Michael Ice&Fire Perm: 100
+[26.01.2025 10:40] Anthony: 5
+[27.01.2025 09:02] Michael Ice&Fire Perm: 100
+[27.01.2025 10:06] Anthony: 14
+[29.01.2025 08:47] Michael Ice&Fire Perm: 100
+[29.01.2025 10:03] Anthony: 20
+[30.01.2025 09:00] Michael Ice&Fire Perm: 100
+[30.01.2025 11:39] Anthony: 15
+[31.01.2025 08:59] Michael Ice&Fire Perm: 100
+[31.01.2025 11:00] Anthony: 20
+[01.02.2025 13:02] Anthony: 15
+[03.02.2025 09:03] Michael Ice&Fire Perm: 100
+[03.02.2025 11:57] Anthony: 25
+[04.02.2025 09:05] Michael Ice&Fire Perm: 100
+[04.02.2025 12:16] Anthony: 5
+[05.02.2025 09:01] Michael Ice&Fire Perm: 100
+[05.02.2025 13:30] Anthony: 30
+[06.02.2025 08:44] Michael Ice&Fire Perm: 100
+[06.02.2025 11:27] Anthony: 40
+[07.02.2025 08:57] Michael Ice&Fire Perm: 100
+[08.02.2025 09:26] Anthony: 30
+[08.02.2025 09:28] Michael Ice&Fire Perm: 100
+[09.02.2025 08:53] Michael Ice&Fire Perm: 100
+[09.02.2025 10:24] Anthony: 50
+[10.02.2025 09:03] Michael Ice&Fire Perm: 100
+[10.02.2025 11:26] Anthony: 30
+[11.02.2025 09:08] Michael Ice&Fire Perm: 100
+[13.02.2025 09:00] Michael Ice&Fire Perm: 100
+[14.02.2025 11:00] Anthony: 20
+[15.02.2025 08:59] Michael Ice&Fire Perm: 100
+[16.02.2025 09:34] Michael Ice&Fire Perm: 100
+[17.02.2025 09:03] Michael Ice&Fire Perm: 100
+[18.02.2025 09:07] Michael Ice&Fire Perm: 100
+[18.02.2025 14:04] Anthony: 25
+[20.02.2025 09:05] Michael Ice&Fire Perm: 100
+[20.02.2025 10:15] Anthony: 10
+[21.02.2025 08:57] Michael Ice&Fire Perm: 100
+[22.02.2025 08:46] Michael Ice&Fire Perm: 100
+[22.02.2025 08:56] Anthony: 30
+[23.02.2025 09:18] Anthony: 15
+[23.02.2025 09:20] Michael Ice&Fire Perm: 100
+[24.02.2025 09:36] Michael Ice&Fire Perm: 100
+[24.02.2025 11:36] Anthony: 10
+[25.02.2025 08:26] Michael Ice&Fire Perm: 100
 [26.02.2025 08:07] Michael Ice&Fire Perm: 100
 [27.02.2025 08:01] Michael Ice&Fire Perm: 100
 [27.02.2025 11:40] Anthony: 20
@@ -298,6 +441,7 @@
 [08.05.2025 09:13] Michael Ice&Fire Perm: 100
 [08.05.2025 09:38] Роман Аландаров: 14
 [08.05.2025 10:12] Anthony: 110
+[08.05.2025 10:29] Гриша Соловьев: 10
 [08.05.2025 10:30] Гриша Соловьев: 10
 [08.05.2025 11:10] Андрей Палыч Павлов: 40
 [08.05.2025 20:25] Андрей Русанов: 0
@@ -307,3 +451,18 @@
 [09.05.2025 09:53] Роман Аландаров: 15
 [09.05.2025 10:30] Павел Антонюк РТ: 30
 [09.05.2025 18:17] Гриша Соловьев: 15
+[10.05.2025 07:57] Анна Русанова РТ: 20
+[10.05.2025 08:56] Anthony: 150
+[10.05.2025 09:06] Michael Ice&Fire Perm: 100
+[10.05.2025 09:20] Павел Антонюк РТ: 30
+[10.05.2025 09:21] Андрей Палыч Павлов: 40
+[10.05.2025 10:16] Роман Аландаров: 0
+[10.05.2025 17:58] Гриша Соловьев: 20
+[11.05.2025 08:49] Павел Антонюк РТ: 30
+[11.05.2025 09:25] Michael Ice&Fire Perm: 100
+[11.05.2025 10:02] Anthony: 130
+[11.05.2025 10:06] Роман Аландаров: 15
+[11.05.2025 10:59] Андрей Палыч Павлов: 40
+[11.05.2025 19:02] Гриша Соловьев: 15
+[12.05.2025 10:56] Anthony: 95
+[12.05.2025 11:13] Андрей Палыч Павлов: 0

@@ -40,10 +40,10 @@ pivot_worksheet2.clear()
 # Insert the data into google sheet
 df, filtered_pivot, filtered_pivot2 = excel_and_pivot()
 set_with_dataframe(raw_worksheet, df)
-set_with_dataframe(pivot_worksheet, filtered_pivot)
-pivot_worksheet.format("C2:C", {"numberFormat": {"type": "PERCENT", "pattern": "0.00%"}})
-set_with_dataframe(pivot_worksheet2, filtered_pivot2)
-pivot_worksheet2.format("C2:C", {"numberFormat": {"type": "PERCENT", "pattern": "0.00%"}})
+set_with_dataframe(pivot_worksheet, filtered_pivot, include_index=True)
+pivot_worksheet.format("D2:D", {"numberFormat": {"type": "PERCENT", "pattern": "0%"}})
+set_with_dataframe(pivot_worksheet2, filtered_pivot2, include_index=True)
+pivot_worksheet2.format("D2:D", {"numberFormat": {"type": "PERCENT", "pattern": "0%"}})
 
 # Open the google sheet in my browser
 webbrowser.open("https://docs.google.com/spreadsheets/d/1hG5T77pHxbJmRq7azhClm2Ew0YWNR4Z7cQf2gW3w9oY")
