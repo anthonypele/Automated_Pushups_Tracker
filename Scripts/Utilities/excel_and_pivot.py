@@ -1,6 +1,7 @@
 import re
 import pandas as pd
 import numpy as np 
+from datetime import datetime
 
 # Imports from my utilities
 from utilities.choose_file import choose_file
@@ -65,17 +66,30 @@ def excel_and_pivot():
     # Remove the total column, that calculates rows
     pivot = pivot.drop(columns='Итог')
 
+    # ===============================================
+    # --- Sort last 2 months before current month ---
+    # ===============================================
+
+    current_month = pd.Period(datetime.today(), freq='M')
+    last_month = current_month -1
+    month_before_last = current_month - 2
+    target_months = [month_before_last, last_month]
+
     # Get the list of all month columns in the pivot
-    all_months = [col for col in pivot.columns] #if col != 'Итог']
+    #all_months = [col for col in pivot.columns] #if col != 'Итог']
     # Sort them
-    all_months_sorted = sorted(all_months)
+    #all_months_sorted = sorted(all_months)
     # Choose the last 2 months only
-    last_two_months = all_months_sorted[-2:]
+    #last_two_months = all_months_sorted[-2:] - that created a mistake of taking the last 2 months, including the new one
+    #last_two_months = all_months_sorted[-3:-1] # and that takes the last 2 months before the new one. So basically it all comes the the fact what is a new one
     # Filter the pivot for only these 2 months
-    filtered_pivot = pivot[last_two_months].copy()
+    filtered_pivot = pivot[target_months].copy()
 
     # Create % column to see the difference in %
-    division = filtered_pivot[last_two_months[-1]] / filtered_pivot[last_two_months[-2]]
+    division = filtered_pivot[last_month] / filtered_pivot[month_before_last]
+    #print(f'supposedly -2 index\n{filtered_pivot[last_two_months[-2]]}')
+    #print(f'supposedly -1 index\n{filtered_pivot[last_two_months[-1]]}')
+    #print(f'supposedly 0 index\n{filtered_pivot[last_two_months[0]]}')
     filtered_pivot['%'] = np.where( # A dance to get rid of division on 0 
         np.isfinite(division), # Condition
         (division - 1).round(2), # If True
@@ -87,7 +101,7 @@ def excel_and_pivot():
         filtered_pivot = filtered_pivot.drop('Итог')
     else:
         total_row = None
-    filtered_pivot = filtered_pivot.sort_values([last_two_months[-1]], ascending=False) 
+    filtered_pivot = filtered_pivot.sort_values([last_month], ascending=False) 
     if total_row is not None:
         filtered_pivot = pd.concat([filtered_pivot, total_row])
 
@@ -109,10 +123,10 @@ def excel_and_pivot():
     # Remove the total column, that calculates rows
     pivot2 = pivot2.drop(columns='Итог')
     # Filter the pivot for only these 2 months
-    filtered_pivot2 = pivot2[last_two_months].copy()
+    filtered_pivot2 = pivot2[target_months].copy()
 
     # Create % column to see the difference in %
-    division = filtered_pivot2[last_two_months[-1]] / filtered_pivot2[last_two_months[-2]]
+    division = filtered_pivot2[last_month] / filtered_pivot2[month_before_last]
     filtered_pivot2['%'] = np.where( # A dance to get rid of division on 0 
         np.isfinite(division), # Condition
         (division - 1).round(2), # If True
@@ -124,8 +138,10 @@ def excel_and_pivot():
         filtered_pivot2 = filtered_pivot2.drop('Итог')
     else:
         total_row = None
-    filtered_pivot2 = filtered_pivot2.sort_values([last_two_months[-1]], ascending=False)
+    filtered_pivot2 = filtered_pivot2.sort_values([last_month], ascending=False)
     if total_row is not None:
         filtered_pivot2 = pd.concat([filtered_pivot2, total_row])
     return df, filtered_pivot, filtered_pivot2
+    
 print('it works')
+
