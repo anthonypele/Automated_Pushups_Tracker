@@ -59,13 +59,16 @@ pag.hotkey("ctrl", "v")
 time.sleep(0.1)
 pag.press("enter")
 time.sleep(3)
-pag.press('esc')
+pag.press('esc')    
 
 # Naming WA app
-windows = gw.getWindowsWithTitle("Whatsapp")
-if windows:
-    whatsapp = windows[0]
+#windows = gw.getWindowsWithTitle("Whatsapp")
+#if windows:
+#    whatsapp = windows[0]
 
+whatsapp = gw.getWindowsWithTitle('Whatsapp')[0]
+whatsapp.activate()
+time.sleep(0.1)
 # Make sure WA app is full screen
 if not whatsapp.isMaximized:
     whatsapp.activate()
@@ -97,9 +100,9 @@ pag.hotkey('enter')
 
 # Select the last message
 pag.hotkey('end')
-for i in range(0): # Skipping 10 messages at a time (to get the last data should be 45)
+for i in range(0): # Skipping 10 messages at a time (to get the last data should be 104)
     pag.hotkey('pgup')
-for i in range(1): # How many messages approximately to select
+for i in range(15): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 
@@ -163,7 +166,7 @@ for line in new_lines:
 
 # Create filename with timestamp - Not Used
 # Name of the file to append new messages
-filename = f"pushups_data.txt"
+filename = f"pushups_data2.txt"
 
 # Define save folder. If I use a timestamp - then add Data\Txt_data
 save_folder = r"C:\Users\Anthony\YandexDisk\_Programming\APT\Data"
@@ -193,7 +196,7 @@ shutil.copy(file_path, backup_path)
 print(f'🔒 Backup saved to: {backup_path}')
 
 # ===========================
-# --- Update and the file ---
+# --- Update the file ---
 # ===========================
 
 # Function, that adds only new lines 
@@ -235,8 +238,8 @@ def Extract_datetime(line):
         return datetime.datetime.min
 
 # Sort lines
-lines.sort(key=Extract_datetime) #Oldest first
-#lines.sort(key=Extract_datetime, reverse=True) #Newest first
+#lines.sort(key=Extract_datetime) #Oldest first
+lines.sort(key=Extract_datetime, reverse=True) #Newest first
 
 # Overwrite with sorted content
 with open(file_path, 'w', encoding='utf-8') as file:
