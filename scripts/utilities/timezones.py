@@ -18,5 +18,18 @@ timezones = {
     "Андрей Палыч Павлов": pytz.timezone('America/Mexico_City'),
     "Роман Аландаров": pytz.timezone('Europe/Moscow'),
     "Андрей Русанов": pytz.timezone('Europe/Moscow'),
-    "Анна Русанова РТ": pytz.timezone('Europe/Moscow')
+    "Анна Русанова РТ": pytz.timezone('Europe/Moscow'),
+    "Аленка Сестренка": pytz.timezone('Europe/Moscow'),
+    "Дима Подгузов": pytz.timezone('Europe/Moscow'),
+    
+}
+
+timezone_rules = {
+    "Anthony": [
+        # (start_date, end_date, timezone)
+        (None, datetime.datetime(2024, 3, 12), pytz.timezone('Europe/Moscow')),
+    ],
+    "Michael Ice&Fire Perm": [
+        (None, None, pytz.timezone('Europe/Madrid'))
+    ]
 }

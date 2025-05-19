@@ -3,8 +3,9 @@
 /Data/Backup/
 /Data/Messages/
 /Data/Txt_data/
-/Data/Xlsx_data/
+/Dgata/Xlsx_data/
 /Scripts/Experiments/
+/Data/pushups_data2.txt
 
 # Ignore OS/system files
 .DS_Store
