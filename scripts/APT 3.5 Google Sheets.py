@@ -4,6 +4,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import webbrowser
 from utilities.excel_and_pivot import excel_and_pivot
 
+help(excel_and_pivot)
+
 # Define scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 

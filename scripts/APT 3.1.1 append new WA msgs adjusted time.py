@@ -51,22 +51,25 @@ if keyboard_layout not in ('0x409', '0x80a'):
 
 #%% Open Whatsapp desctop
 
-keyboard.send('windows+s') # Opens window search reliable with 'win' key after keyboard layout change
-keyboard.release('windows')
-time.sleep(2)
-pyperclip.copy("Whatsapp")
-pag.hotkey("ctrl", "v")
-time.sleep(0.1)
-pag.press("enter")
-time.sleep(3)
-pag.press('esc')    
+try:
+    keyboard.send('windows+s') # Opens window search reliable with 'win' key after keyboard layout change
+    keyboard.release('windows')
+    time.sleep(2)
+    pyperclip.copy("Whatsapp")
+    pag.hotkey("ctrl", "v") # I use both keyboard and pag libraries, both have limitations 
+    time.sleep(0.1)
+    pag.press("enter")
+    time.sleep(3)
+    pag.press('esc')   
+except:
+    raise Keyboard_layoutError("It was Russian keyboard layout, now English, try again") # Doesn't work correctly, crushes, but at least doesn't attack me
 
 # Naming WA app
 #windows = gw.getWindowsWithTitle("Whatsapp")
 #if windows:
 #    whatsapp = windows[0]
 
-whatsapp = gw.getWindowsWithTitle('Whatsapp')[0]
+whatsapp = gw.getWindowsWithTitle('Whatsapp')[0] 
 whatsapp.activate()
 time.sleep(0.1)
 # Make sure WA app is full screen
@@ -88,7 +91,7 @@ pag.press("enter")
 time.sleep(2)
 
 # Click the mouse inside the chat to start selecting messages
-screen_w, screen_h = pag.size() # Move the mouse
+screen_w, screen_h = pag.size() # adjust the right location for any screen
 input_x = screen_w * 0.29
 input_y = screen_h * 0.25
 pag.click(input_x, input_y, button="right")
@@ -102,7 +105,7 @@ pag.hotkey('enter')
 pag.hotkey('end')
 for i in range(0): # Skipping 10 messages at a time (to get the last data should be 104)
     pag.hotkey('pgup')
-for i in range(15): # How many messages approximately to select
+for i in range(70): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 
