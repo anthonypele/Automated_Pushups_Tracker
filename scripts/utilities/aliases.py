@@ -1,5 +1,6 @@
 aliases = {
     "Michael Ice&Fire Perm": "Миша",
+    "Michael Ice&Fire Ice&Fire Perm": "Миша",
     "Anthony": "Антон",
     "Гриша Соловьев": "Гриша",
     "Павел Антонюк РТ": "Паша",

@@ -1,0 +1,14 @@
+APT-Tracker/
+│
+├── pushup_parser.py             # Your automation script
+├── weekly_stats_generator.py    # Python code that outputs weekly HTML or data
+├── data/
+│   └── pushups.csv              # Raw or cleaned data
+├── site/                        # All website-related files
+│   ├── index.html
+│   ├── week.html
+│   ├── month.html
+│   ├── streaks.html
+│   └── assets/
+│       └── style.css
+└── README.md

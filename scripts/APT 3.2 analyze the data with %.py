@@ -1,3 +1,4 @@
+#%% Imports
 import tkinter as tk
 from tkinter import filedialog
 import re
@@ -5,12 +6,16 @@ import datetime
 from collections import defaultdict
 import os
 import pyperclip
+import time
+import keyboard
+import pyautogui as pag
+import pygetwindow as gw
 
 # Imports from my Utilities
 from utilities.aliases import aliases
 from utilities.choose_file import choose_file
 
-# Open a file dialog to choose a file
+#%% Open a file dialog to choose a file
 with open(choose_file(), 'r', encoding="utf-8") as file:
     lines = file.readlines() #creating a list made of each line from the txt imported WA file
 
@@ -88,7 +93,7 @@ for name in sorted(all_names, key=lambda n: totals_last_week.get(n, 0), reverse=
         print_and_save(f"{display_name}: {totals_last_week.get(name, 0)}, ровно 😎")
 
 print_and_save(f"\nДней отжиманий за неделю:\n")
-for name in sorted(all_names, key=lambda x: days_count_last_week.get(x, 0), reverse=True):
+for name in sorted(all_names, key=lambda x: (days_count_last_week.get(x, 0), days_count_week_before_last.get(x, 0)), reverse=True):
     display_name = aliases.get(name, name)
     if days_count_last_week.get(name, 0) == days_count_week_before_last.get(name, 0):
         print_and_save(f"{display_name}: {days_count_last_week.get(name, 0)} дн., неделю назад - {days_count_week_before_last.get(name, 0)} дн. Стабильность - признак мастерства")
@@ -113,3 +118,29 @@ message_file_path = os.path.join(message_folder, message_file)
 with open(message_file_path, 'w', encoding="utf-8") as file:
     file.write(output_text)
 
+#%% Open the group in WA to paste the message
+
+pag.hotkey("win", "s")
+time.sleep(2)
+pyperclip.copy("Whatsapp")
+pag.hotkey("ctrl", "v")
+time.sleep(0.1)
+pag.press("enter")
+time.sleep(3)
+pag.press('esc')   
+
+# Search for the group
+pag.hotkey("ctrl", "f")
+time.sleep(1)
+group_name = "Кто отжимается по утрам"
+pyperclip.copy(group_name)
+pag.hotkey("ctrl", "a") # to ensure previous search is not added
+pag.hotkey("ctrl", "v")
+time.sleep(1)
+pag.hotkey("down")
+time.sleep(1)
+pag.press("enter")
+time.sleep(2)
+
+pyperclip.copy(output_text)
+pag.hotkey('ctrl', 'v') # Enter the data waiting for my approval to enter
