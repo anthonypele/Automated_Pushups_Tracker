@@ -105,7 +105,7 @@ pag.hotkey('enter')
 pag.hotkey('end')
 for i in range(0): # Skipping 10 messages at a time (to get the last data should be 104)
     pag.hotkey('pgup')
-for i in range(70): # How many messages approximately to select
+for i in range(80): # How many messages approximately to select
     pag.hotkey('space')
     pag.hotkey('up')
 
