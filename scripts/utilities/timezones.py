@@ -15,6 +15,7 @@ timezones = {
     'Michael Ice&Fire Ice&Fire Perm': pytz.timezone('Europe/Madrid'),
     'Anthony': my_timezone,
     'Гриша Соловьев': pytz.timezone('Europe/Moscow'),
+    '~ Григорий Соловьев': pytz.timezone('Europe/Moscow'),
     'Павел Антонюк РТ': pytz.timezone('Europe/Moscow'),
     'Андрей Палыч Павлов': pytz.timezone('America/Mexico_City'),
     'Роман Аландаров': pytz.timezone('Europe/Moscow'),
@@ -23,7 +24,11 @@ timezones = {
     'Аленка Сестренка': pytz.timezone('Europe/Moscow'),
     'Дима Подгузов': pytz.timezone('Europe/Moscow'),
     'Диана Прыжок Отжимания РТ': pytz.timezone('Europe/Moscow'),
-    
+    'Vladimir CDMX Екат МужЛены ПапаФилиппа': pytz.timezone('America/Mexico_City'),
+    'Алексей Ильин Водоканал DWU МТС': pytz.timezone('Europe/Moscow'),
+    'Le chat Alex РТ italki Romanov': pytz.timezone('Europe/Moscow'),
+    'Amy Goggins Эми РТ бег Гоггинс': pytz.timezone('Europe/Moscow'),
+    'Ананастя Кузьмина Кузьмина РТ': pytz.timezone('America/Mexico_City')
 }
 
 timezone_rules = {

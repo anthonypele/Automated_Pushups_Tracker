@@ -43,7 +43,6 @@ with pd.ExcelWriter(file_path, engine='openpyxl', date_format="DD.MM.YYYY") as w
         cell = sheet.cell(row=row, column=sheet.max_column)
         cell.number_format = '0%'
 
-print("✅ Data successfully exported to {file path}")
-
+print("✅ Data successfully exported to {file path}")       
 os.startfile(file_path)
 

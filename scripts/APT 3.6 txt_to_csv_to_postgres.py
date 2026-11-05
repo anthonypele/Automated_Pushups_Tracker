@@ -9,15 +9,15 @@ import os
 with open(choose_file(), 'r', encoding='UTF-8') as file:
     lines = file.readlines()
 
-pattern = r"\[(\d{2}\.\d{2}\.\d{4}) (\d{1,2}:\d{2})\] (.*?): (\d+)"
+pattern = r"\[(\d{2}\.\d{2}\.\d{4}) (\d{1,2}:\d{2})\]\s+(?:\[(.*?)\]\s+)?(.*?)\s*:\s*(\d+)"
 
 data_csv = ['date,time,pusher,pushups']
 
 # Parse lines
 for line in lines: 
-    match = re.match(pattern, line.strip())
+    match = re.match(pattern, line.strip()) 
     if match:
-        date_str, time, name, pushups = match.groups()
+        date_str, time, tag, name, pushups = match.groups() # here is tag, [tg], that I am not using for now.
         date = datetime.datetime.strptime(date_str, '%d.%m.%Y').date()
         alias = aliases.get(name, name)
         postgres_date = datetime.datetime.strftime(date, '%Y-%m-%d')
@@ -81,4 +81,24 @@ conn.commit()
 cursor.close()
 conn.close()
 
-# conn2 = psycopg2.connect()
+conn2 = psycopg2.connect(
+    dbname = "postgres",
+    user = "postgres.nbzyidcvesjbajgbvkud",
+    password = "Pushharder200",
+    host = "aws-1-us-west-2.pooler.supabase.com",
+    port = "5432"
+)
+
+cursor = conn2.cursor()
+
+# Loop through rows and insert with ON CONFLICT
+for row in df.itertuples(index=False):
+    cursor.execute("""
+        INSERT INTO pushups (date, time, name, pushups)
+        VALUES (%s, %s, %s, %s)
+        ON CONFLICT DO NOTHING;
+    """, (row.date, row.time, row.pusher, row.pushups))
+
+conn2.commit()
+cursor.close()
+conn2.close()

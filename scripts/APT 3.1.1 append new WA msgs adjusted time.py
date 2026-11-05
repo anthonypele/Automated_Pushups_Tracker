@@ -84,7 +84,7 @@ group_name = "Отжимания утром"
 pyperclip.copy(group_name)
 pag.hotkey("ctrl", "a") # to ensure previous search is not added
 pag.hotkey("ctrl", "v")
-time.sleep(1)
+time.sleep(2)
 pag.hotkey("down")
 time.sleep(1)
 pag.press("enter")
@@ -92,25 +92,37 @@ time.sleep(2)
 
 # Click the mouse inside the chat to start selecting messages
 screen_w, screen_h = pag.size() # adjust the right location for any screen
-input_x = screen_w * 0.29
+input_x = screen_w * 0.79 # changed it to the right side with new WA version, it used to be 0.29
 input_y = screen_h * 0.25
 pag.click(input_x, input_y, button="right")
 time.sleep(1)
 
 # Select selection mode
-pag.hotkey('tab')
+pag.hotkey('down') # version before 2025-12-22: pag.hotkey('tab')
 pag.hotkey('enter')
+
+# before 2025-12-22 WA version I could just use 'space', but now I need to click a mouse in the first box
+screen_w, screen_h = pag.size() # adjust the right location for any screen
+input_x = screen_w * 0.3543
+input_y = screen_h * 0.8444
+pag.click(input_x, input_y, button="left")
+time.sleep(1)
 
 # Select the last message
 pag.hotkey('end')
 for i in range(0): # Skipping 10 messages at a time (to get the last data should be 104)
     pag.hotkey('pgup')
-for i in range(80): # How many messages approximately to select
+for i in range(10): # How many messages approximately to select
+    pag.hotkey('up') # I changed places up and space after 2025-12-22 
     pag.hotkey('space')
-    pag.hotkey('up')
 
 # Copy the messages
-pag.hotkey('ctrl', 'c')
+# before 2025-12-22 worked easier like this: pag.hotkey('ctrl', 'c')
+screen_w, screen_h = pag.size() # adjust the right location for any screen
+input_x = screen_w * 0.8441
+input_y = screen_h * 0.9125
+pag.click(input_x, input_y, button="left")
+time.sleep(1)
 
 # Retrieve copied messages
 messages = pyperclip.paste()

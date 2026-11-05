@@ -48,12 +48,14 @@ for line in lines:
         #Make pushups integer
         pushups = int(pushups)
 
+        display_name = aliases.get(name, name) # Get the preferable name or use the basic one if it's not in the dictionary aliases
+
         if start_of_last_week <= date <= end_of_last_week:
-            totals_last_week[name] += pushups
-            days_count_last_week[name] += 1
+            totals_last_week[display_name] += pushups
+            days_count_last_week[display_name] += 1
         elif start_of_week_before_last <= date <= end_of_week_before_last:
-            totals_week_before_last[name] += pushups
-            days_count_week_before_last[name] += 1
+            totals_week_before_last[display_name] += pushups
+            days_count_week_before_last[display_name] += 1
 
 # Prepare all names across both weeks
 all_names = set(totals_last_week) | set(totals_week_before_last)
@@ -78,32 +80,29 @@ for name in all_names:
     previous = days_count_week_before_last.get(name, 0)
     diff_days[name] = last - previous
 
-print_and_save(f"\nВсего отжиманий на прошлой неделе с {start_of_last_week} по {end_of_last_week}:\n")
+print_and_save(f"\n*Всего отжиманий на прошлой неделе с {start_of_last_week} по {end_of_last_week}:*\n(Посмотреть красивую диаграмму здесь https://public.tableau.com/app/profile/anton.pelepelin/viz/Pushups_data/Dashboard6w :\n")
 for name in sorted(all_names, key=lambda n: totals_last_week.get(n, 0), reverse=True):
-
-    display_name = aliases.get(name, name) # Get the preferable name or use the basic one if it's not in the dictionary aliases
 
     last_week = totals_last_week.get(name, 0) # making sure if the name doesn't exist this week, then it has 0, using extra variable for readability
 
     if diff_pushups.get(name, 0) > 0:
-        print_and_save(f"{display_name}: {last_week}, это больше на {diff_pushups[name]}, чем на неделе до 💪")
+        print_and_save(f"{name}: {last_week}, это больше на {diff_pushups[name]}, чем на неделе до 💪")
     elif diff_pushups.get(name, 0) < 0:
-        print_and_save(f"{display_name}: {totals_last_week.get(name, 0)}, это меньше на {abs(diff_pushups[name])}, чем на неделе до 😴")
+        print_and_save(f"{name}: {totals_last_week.get(name, 0)}, это меньше на {abs(diff_pushups[name])}, чем на неделе до 😴")
     else:
-        print_and_save(f"{display_name}: {totals_last_week.get(name, 0)}, ровно 😎")
+        print_and_save(f"{name}: {totals_last_week.get(name, 0)}, ровно 😎")
 
-print_and_save(f"\nДней отжиманий за неделю:\n")
+print_and_save(f"\n*Дней отжиманий за неделю:*\n")
 for name in sorted(all_names, key=lambda x: (days_count_last_week.get(x, 0), days_count_week_before_last.get(x, 0)), reverse=True):
-    display_name = aliases.get(name, name)
     if days_count_last_week.get(name, 0) == days_count_week_before_last.get(name, 0):
-        print_and_save(f"{display_name}: {days_count_last_week.get(name, 0)} дн., неделю назад - {days_count_week_before_last.get(name, 0)} дн. Стабильность - признак мастерства")
+        print_and_save(f"{name}: {days_count_last_week.get(name, 0)} дн., неделю назад - {days_count_week_before_last.get(name, 0)} дн. Стабильность - признак мастерства")
     else:
-        print_and_save(f"{display_name}: {days_count_last_week.get(name, 0)} дн., неделю назад - {days_count_week_before_last.get(name, 0)} дн.")
+        print_and_save(f"{name}: {days_count_last_week.get(name, 0)} дн., неделю назад - {days_count_week_before_last.get(name, 0)} дн.")
 
 # Copy all the printed text into the clipboard
 pyperclip.copy(output_text)
 
-# Start the txt file to check pasting
+# Start the txt file to check pasting   
 #os.startfile(choose_file())
 
 # Create Messages folder, if it doesn't exist

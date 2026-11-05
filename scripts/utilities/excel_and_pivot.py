@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Imports from my utilities
 from utilities.choose_file import choose_file
-from utilities.aliases import aliases
+from utilities.aliases import aliases_eng
 
 # %% Open a file dialog to choose a file
 
@@ -24,7 +24,7 @@ def excel_and_pivot():
  
     def replace_name(match):
         date, time, name, pushups = match.groups()
-        new_name = aliases.get(name, name)
+        new_name = aliases_eng.get(name, name)
         return f'[{date} {time}] {new_name}: {pushups}'
 
     # Changing my lines

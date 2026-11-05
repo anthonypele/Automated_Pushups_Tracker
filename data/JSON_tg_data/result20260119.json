@@ -1,0 +1,511 @@
+{
+ "name": "Кто отжимается по утрам",
+ "type": "private_supergroup",
+ "id": 3523286288,
+ "messages": [
+  {
+   "id": -999775460,
+   "type": "service",
+   "date": "2026-01-08T17:33:54",
+   "date_unixtime": "1767915234",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "create_group",
+   "title": "Кто отжимается по утрам",
+   "members": [
+    "Anton Pelepelin",
+    "Гриша Соловьев",
+    "Алексей Ильин Водоканал DWU МТС",
+    "Андрей Палыч Павлов",
+    "Роман Аландаров"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999775459,
+   "type": "service",
+   "date": "2026-01-08T17:34:40",
+   "date_unixtime": "1767915280",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "invite_members",
+   "members": [
+    "Андрей Русанов"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999775456,
+   "type": "service",
+   "date": "2026-01-08T17:35:30",
+   "date_unixtime": "1767915330",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "invite_members",
+   "members": [
+    "Павел Антонюк РТ"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999775455,
+   "type": "service",
+   "date": "2026-01-08T17:35:51",
+   "date_unixtime": "1767915351",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "invite_members",
+   "members": [
+    "Анна Русанова РТ"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": -999775454,
+   "type": "service",
+   "date": "2026-01-08T17:36:13",
+   "date_unixtime": "1767915373",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "migrate_to_supergroup",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2026-01-08T17:36:13",
+   "date_unixtime": "1767915373",
+   "actor": "Кто отжимается по утрам",
+   "actor_id": "channel3523286288",
+   "action": "migrate_from_group",
+   "title": "Кто отжимается по утрам",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 2,
+   "type": "message",
+   "date": "2026-01-08T17:38:29",
+   "date_unixtime": "1767915509",
+   "edited": "2026-01-09T01:54:27",
+   "edited_unixtime": "1767945267",
+   "from": "Anton Pelepelin",
+   "from_id": "user363928454",
+   "text": [
+    "Всем привет! По просьбе ",
+    {
+     "type": "mention_name",
+     "text": "Роман",
+     "user_id": 5594775531
+    },
+    " и Эми создаю резервный чат здесь. Пока не знаю как буду забирать данные отсюда, но придумаю, как только данные появятся :) Когда даже ",
+    {
+     "type": "mention_name",
+     "text": "Роман",
+     "user_id": 5594775531
+    },
+    " не отписывается в вотсапе - это серьезно"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Всем привет! По просьбе "
+    },
+    {
+     "type": "mention_name",
+     "text": "Роман",
+     "user_id": 5594775531
+    },
+    {
+     "type": "plain",
+     "text": " и Эми создаю резервный чат здесь. Пока не знаю как буду забирать данные отсюда, но придумаю, как только данные появятся :) Когда даже "
+    },
+    {
+     "type": "mention_name",
+     "text": "Роман",
+     "user_id": 5594775531
+    },
+    {
+     "type": "plain",
+     "text": " не отписывается в вотсапе - это серьезно"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "🔥",
+      "recent": [
+       {
+        "from": "Michael Tomilov",
+        "from_id": "user264438665",
+        "date": "2026-01-19T12:52:59"
+       },
+       {
+        "from": "Le chat Alex РТ italki Romanov",
+        "from_id": "user53507228",
+        "date": "2026-01-09T01:54:27"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2026-01-08T17:39:46",
+   "date_unixtime": "1767915586",
+   "edited": "2026-01-08T17:44:04",
+   "edited_unixtime": "1767915844",
+   "from": "Anton Pelepelin",
+   "from_id": "user363928454",
+   "text": "Предлагаю отписываться сюда, когда вы не можете отписаться в вотсап. Потом уже я подумаю делать ли темы и как получать данные через апи",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Предлагаю отписываться сюда, когда вы не можете отписаться в вотсап. Потом уже я подумаю делать ли темы и как получать данные через апи"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Michael Tomilov",
+        "from_id": "user264438665",
+        "date": "2026-01-19T12:53:03"
+       },
+       {
+        "from": "Андрей Палыч Павлов",
+        "from_id": "user197018827",
+        "date": "2026-01-08T17:44:04"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2026-01-08T17:44:12",
+   "date_unixtime": "1767915852",
+   "from": "Андрей Палыч Павлов",
+   "from_id": "user197018827",
+   "text": "По приоритету куда лучше писать?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "По приоритету куда лучше писать?"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2026-01-08T17:44:40",
+   "date_unixtime": "1767915880",
+   "edited": "2026-01-08T17:50:04",
+   "edited_unixtime": "1767916204",
+   "from": "Anton Pelepelin",
+   "from_id": "user363928454",
+   "text": "Приоритет пока вотсап",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Приоритет пока вотсап"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Андрей Палыч Павлов",
+        "from_id": "user197018827",
+        "date": "2026-01-08T17:50:04"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2026-01-08T23:13:55",
+   "date_unixtime": "1767935635",
+   "edited": "2026-01-09T00:47:26",
+   "edited_unixtime": "1767941246",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "reply_to_message_id": 2,
+   "text": "Привет! Я пишу каждый день в вотсапе с утра, но сообщение уходит, в лучшем случае, только к вечеру. Буду писать здесь",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Привет! Я пишу каждый день в вотсапе с утра, но сообщение уходит, в лучшем случае, только к вечеру. Буду писать здесь"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Michael Tomilov",
+        "from_id": "user264438665",
+        "date": "2026-01-09T04:11:26"
+       },
+       {
+        "from": "Anton Pelepelin",
+        "from_id": "user363928454",
+        "date": "2026-01-09T00:47:26"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2026-01-08T23:14:16",
+   "date_unixtime": "1767935656",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "service",
+   "date": "2026-01-09T01:53:55",
+   "date_unixtime": "1767945235",
+   "actor": "Le chat Alex РТ italki Romanov",
+   "actor_id": "user53507228",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2026-01-09T23:47:12",
+   "date_unixtime": "1768024032",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "message",
+   "date": "2026-01-10T23:43:49",
+   "date_unixtime": "1768110229",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "28",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "28"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2026-01-11T22:08:02",
+   "date_unixtime": "1768190882",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2026-01-12T22:10:16",
+   "date_unixtime": "1768277416",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "message",
+   "date": "2026-01-13T22:09:38",
+   "date_unixtime": "1768363778",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2026-01-14T21:54:55",
+   "date_unixtime": "1768449295",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2026-01-15T21:59:14",
+   "date_unixtime": "1768535954",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2026-01-17T00:12:50",
+   "date_unixtime": "1768630370",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2026-01-18T00:01:16",
+   "date_unixtime": "1768716076",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "29",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "29"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "type": "message",
+   "date": "2026-01-18T22:06:59",
+   "date_unixtime": "1768795619",
+   "from": "Роман Аландаров",
+   "from_id": "user5594775531",
+   "text": "24",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "24"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "message",
+   "date": "2026-01-19T01:03:38",
+   "date_unixtime": "1768806218",
+   "from": "Павел Антонюк РТ",
+   "from_id": "user117031123",
+   "text": "30",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "30"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "message",
+   "date": "2026-01-19T04:30:20",
+   "date_unixtime": "1768818620",
+   "from": "Анна Русанова РТ",
+   "from_id": "user971233787",
+   "text": "20",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "20"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "service",
+   "date": "2026-01-19T12:36:49",
+   "date_unixtime": "1768847809",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "pin_message",
+   "message_id": 2,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 22,
+   "type": "service",
+   "date": "2026-01-19T12:37:28",
+   "date_unixtime": "1768847848",
+   "actor": "Anton Pelepelin",
+   "actor_id": "user363928454",
+   "action": "invite_members",
+   "members": [
+    "Pushups_Tracker"
+   ],
+   "text": "",
+   "text_entities": []
+  }
+ ]
+}

@@ -75,8 +75,8 @@ df_streak = pd.read_sql("""
 			name,
 			dt
 		FROM ranked
-		WHERE dt = (CURRENT_DATE - INTERVAL '1 day')
-					- (rn - 1) * INTERVAL '1 day'
+		WHERE dt = (CURRENT_DATE)
+					- (rn) * INTERVAL '1 day'
 	),
 
 -- 4) Count how many days each user survived in step 3
@@ -178,14 +178,14 @@ LIMIT 20
 
 tab_longest_streak = tabulate(df_longests_streak, headers='keys', tablefmt='psql', showindex=False)
 
-pyperclip.copy(tab_longest_streak)
-print(tab_longest_streak)
+# pyperclip.copy(tab_longest_streak)
+# print(tab_longest_streak)
 
 # pyperclip.copy(tab_gap)
 # print(tab_gap)
 
-# pyperclip.copy(tab_streak)
-# print(tab_streak)
+pyperclip.copy("*Streaks*\n" + tab_streak)
+print("*Streaks*\n" + tab_streak)
 
 # pyperclip.copy(tab_beauty)
 # print(tab_beauty)
